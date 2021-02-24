@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/TechEscapade2021/static/css/main.afc33965.chunk.css",
+    "main.js": "/TechEscapade2021/static/js/main.35c43863.chunk.js",
+    "main.js.map": "/TechEscapade2021/static/js/main.35c43863.chunk.js.map",
+    "runtime-main.js": "/TechEscapade2021/static/js/runtime-main.7a904c5a.js",
+    "runtime-main.js.map": "/TechEscapade2021/static/js/runtime-main.7a904c5a.js.map",
+    "static/js/2.e3617639.chunk.js": "/TechEscapade2021/static/js/2.e3617639.chunk.js",
+    "static/js/2.e3617639.chunk.js.map": "/TechEscapade2021/static/js/2.e3617639.chunk.js.map",
+    "static/js/3.3accd646.chunk.js": "/TechEscapade2021/static/js/3.3accd646.chunk.js",
+    "static/js/3.3accd646.chunk.js.map": "/TechEscapade2021/static/js/3.3accd646.chunk.js.map",
+    "index.html": "/TechEscapade2021/index.html",
+    "static/css/main.afc33965.chunk.css.map": "/TechEscapade2021/static/css/main.afc33965.chunk.css.map",
+    "static/js/2.e3617639.chunk.js.LICENSE.txt": "/TechEscapade2021/static/js/2.e3617639.chunk.js.LICENSE.txt",
+    "static/media/Box.css": "/TechEscapade2021/static/media/3163 (2).af634da9.jpg",
+    "static/media/App.css": "/TechEscapade2021/static/media/abstract-science-fiction-futuristic-background-with-red-blue-neon-lights (4).44242211.jpg",
+    "static/media/cu.4b8cc2ff.svg": "/TechEscapade2021/static/media/cu.4b8cc2ff.svg",
+    "static/media/grid-small1.ee8979bd.svg": "/TechEscapade2021/static/media/grid-small1.ee8979bd.svg",
+    "static/media/hint.52de6f57.svg": "/TechEscapade2021/static/media/hint.52de6f57.svg",
+    "static/media/lvl.0a1ded82.png": "/TechEscapade2021/static/media/lvl.0a1ded82.png",
+    "static/media/origin.a6fe70b4.svg": "/TechEscapade2021/static/media/origin.a6fe70b4.svg",
+    "static/media/sideth1.950d2391.svg": "/TechEscapade2021/static/media/sideth1.950d2391.svg",
+    "static/media/welcome.ac65d1ad.svg": "/TechEscapade2021/static/media/welcome.ac65d1ad.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a904c5a.js",
+    "static/js/2.e3617639.chunk.js",
+    "static/css/main.afc33965.chunk.css",
+    "static/js/main.35c43863.chunk.js"
+  ]
+}
