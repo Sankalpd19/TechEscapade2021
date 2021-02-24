@@ -42,7 +42,8 @@ function Box({flag}) {
 		if(count===texts.length-1){
 			alert("Message recieved from Bit Lee:- If you get this message,it means you're in real danger..But don't worry I'll help you at every step!! Do remember to stay attentive,everything's a clue!");
 		TweenMax.to('.proceed',2,{visibility:'unset',display:'unset',opacity:1,ease:Power3.easeOut,delay:1});
-		}			
+		}	
+		
 
 	document.querySelector('.typing').textContent=currentText; 
 		txtAnim();

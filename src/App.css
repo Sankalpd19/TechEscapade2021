@@ -33,7 +33,9 @@ body{position: relative;
     overflow:hidden;
     align-items: inherit;
     justify-content: center;
+    
 }
+
 
 .main_container .leftbar{
     flex: 0.4;
@@ -265,4 +267,12 @@ body{position: relative;
 }
 .logo circle{
     width: 30%;
+}
+@media (max-width:732px){
+ 
+	.main_container{
+        display: none;
+        overflow: auto;
+        overflow-wrap: normal;
+    }
 }

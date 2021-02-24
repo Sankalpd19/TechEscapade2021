@@ -6,11 +6,12 @@ function Card({setFlag}) {
 function box_open(){
 			console.log(setFlag);
 			let count=1;
-			setFlag(count);
-			document.getElementById("yo").style.display='flex';
-			document.getElementById("yo1").style.display='none';
+			setFlag(count);document.getElementById("yo1").style.display='none';
 			document.getElementById("yo2").style.display='none';
 			document.getElementById("yo3").style.display='none';
+			document.getElementById("yo").style.display='flex';
+			TweenMax.from('#yo',1.5,{x:-300},Power3.easeOut);
+			
 }
   return(
 		
