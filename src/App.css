@@ -263,3 +263,6 @@ body{position: relative;
     align-items: center;
     justify-content: center;
 }
+.logo circle{
+    width: 30%;
+}
