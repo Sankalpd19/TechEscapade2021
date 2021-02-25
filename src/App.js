@@ -86,6 +86,7 @@ function App() {
         </div>
         
           <div ref={el=>{content1box=el}} className="content1"  id="x" style={{display:x}}>
+            <h3 className="rotatemsg">Please rotate your device!!</h3>
 					  <div ref={el=>{content1h3=el} }  className="beginh3"  onClick={exitAnim}>
             <h3 ref={el=>{beginh3=el}} className="begintxt" >BE<span ref={el=>{beginG=el}}>G</span>IN</h3></div>
 				  </div>
