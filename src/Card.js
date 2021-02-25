@@ -10,8 +10,6 @@ function box_open(){
 			document.getElementById("yo2").style.display='none';
 			document.getElementById("yo3").style.display='none';
 			document.getElementById("yo").style.display='flex';
-			TweenMax.from('#yo',1.5,{x:-300},Power3.easeOut);
-			
 }
   return(
 		

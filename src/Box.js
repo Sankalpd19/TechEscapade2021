@@ -4,7 +4,6 @@ import './Card';
 import bulb from './assests/bulb.png';
 import hint from './assests/hint.svg';
 import lvl from './assests/lvl.png';
-// import Tilt from 'react-tilt';
 import {TweenMax,Power3} from 'gsap';
 import {TimelineLite} from 'gsap/gsap-core';
 
@@ -15,16 +14,15 @@ function Box({flag}) {
 	let count=0;
 	let currentText='';
 
-	const boxTl= new TimelineLite();
-			boxTl.pause(true);
+	
 			if(flag!==0)
-				{
-					boxTl.play(true);
+				{	
+						TweenMax.to('.card',{display:'flex',opacity:1,onComplete:function(){
+						TweenMax.fromTo('.typing',1.5,{css:{opacity:0,filter: 'drop-shadow(2px 4px 3px rgba(0,0,0,0.8))'},ease:Power3.easeInOut},{css:{opacity:1},ease:Power3.easeInOut});
+						}});
+	
 				}
-		boxTl.from('.card',{duration:1,y:200,onComplete:function(){
-			TweenMax.fromTo('.typing',1.5,{css:{opacity:0,filter: 'drop-shadow(2px 4px 3px rgba(0,0,0,0.8))'},ease:Power3.easeInOut},{css:{opacity:1},ease:Power3.easeInOut});
-			// txtAnim();
-		}});
+	
 	currentText=texts[count];
 	 const next_page = () =>{
 		if (count === texts.length-1){
@@ -48,8 +46,6 @@ function Box({flag}) {
 	document.querySelector('.typing').textContent=currentText; 
 		txtAnim();
 	  }
-
-
   const txtAnim = () =>{
 	TweenMax.to('.nxtbtn',1,{visibility:'hidden',opacity:0,ease:Power3.easeOut});
 	TweenMax.to('.proceed',1,{visibility:'hidden',opacity:0,ease:Power3.easeOut});
@@ -73,14 +69,11 @@ function Box({flag}) {
 	}
 	let timer=setInterval(onTick,18);
 	const complete=()=>{
-		
 		clearInterval(timer);
 		timer=null;
 		TweenMax.to('.nxtbtn',1,{visibility:'unset',opacity:1,ease:Power3.easeOut,delay:0.5});
-		
 	}
   }
-  	
   	const level1=()=>{
 		TweenMax.to('.bar',{display:'unset',ease:Power3.easeOut});
 		TweenMax.to('.nxtbtn',{display:'none'});
@@ -96,7 +89,6 @@ function Box({flag}) {
 			
 		}});
 		TweenMax.to('.proceed',1,{opacity:0,display:'none'});
-		
 	  }
 	  
 	  const hint_tab=()=>{
@@ -117,7 +109,6 @@ function Box({flag}) {
 	  }
 	return(
 		<>
-		
 		<div className="container" >
 		<div className="tooltip">
 		<img src={bulb} alt="bulb"  onClick={hint_tab} className="bulb"/>
@@ -127,7 +118,6 @@ function Box({flag}) {
 		</div>
 			
 			<div className="bar"></div>
-
 			<div className="hint_section">
 				<div className="hint_box">
 				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
@@ -159,16 +149,12 @@ function Box({flag}) {
 				<div className="hint_box">
 				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
 				</div>
-				{
-				
-				}
 			</div>
 			<div className="card">
 			
 				<div className="content" >
 			
 					<h2>01</h2>
-					{/* <h3></h3> */}
 					<p   className="typing" style={{opacity:0}}>{currentText}</p>
 					<img className="lvl" src={lvl} alt="lvl" style={{width:'100%',display:'none',opacity:0}}/>
 					<a href="#"	className="nxtbtn" onClick={next_page}>Next</a>
@@ -176,7 +162,6 @@ function Box({flag}) {
 					
 				</div>
 			</div>	
-				{/* <div className="level1">hiaefvhjHFBWEFBJHWJFHE</div> */}
 			<p className="proceed" onClick={level1}> Click here to proceed to first level</p>
 			
 		</div>

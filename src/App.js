@@ -7,7 +7,6 @@ import origin from './assests/origin.svg';
 import cu from './assests/cu.svg';
 import Card from './Card';
 import Box from './Box';
-import Tilt from 'react-tilt';
 import {TweenMax,Power3} from 'gsap';
 import { TweenLite } from 'gsap/gsap-core';
 var yo='none';
@@ -23,7 +22,6 @@ function App() {
   useEffect(()=>{
    
     TweenMax.from(content1box,1.5,{xPercent:-100},Power3.easeInOut);
-    //TweenMax.from(content1h3,2,{autoAlpha:0},Power3.easeOut);
     TweenLite.from(beginh3,2,{y:100,autoAlpha:0,ease:Power3.easeOut,delay:1});
   },[]);  
    
@@ -63,11 +61,11 @@ function App() {
           <div className="origin ">
               <img src={origin} alt="origin"/>
           </div>
-          <Tilt className="Tilt" options={{ max : 25 }}  >
+        
             <section className="card_box">
            <Card setFlag={setFlag}/> 
           </section> 
-          </Tilt>
+        
         </section>
        
         {/* RIGHT SIDE BAR */}
@@ -88,20 +86,6 @@ function App() {
         </div>
         
           <div ref={el=>{content1box=el}} className="content1"  id="x" style={{display:x}}>
-            <div className="logo">
-              <div className="logo circle">
-                     <svg  viewBox="0 0 134 133" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M131.5 66.5C131.5 101.829 102.64 130.5 67 130.5C31.3599 130.5 2.5 101.829 2.5 66.5C2.5 31.1714 31.3599 2.5 67 2.5C102.64 2.5 131.5 31.1714 131.5 66.5Z" stroke="white" stroke-width="5"/>
-                    </svg>
-              </div>
-              <div className="logo tm">
-                    <svg  viewBox="0 0 96 98" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.5 14L0 0H95.5L80 14H54V84.5L47 98L40 84.5V14H14.5Z" fill="white"/>
-                    <path d="M80 24L56 47.5L66 43.5V88L80 74.5V24Z" fill="white"/>
-                    <path d="M14.5 24L38.5 47.5L28.5 43.5V88L14.5 74.5V24Z" fill="white"/>
-                    </svg>
-              </div>
-            </div>
 					  <div ref={el=>{content1h3=el} }  className="beginh3"  onClick={exitAnim}>
             <h3 ref={el=>{beginh3=el}} className="begintxt" >BE<span ref={el=>{beginG=el}}>G</span>IN</h3></div>
 				  </div>
