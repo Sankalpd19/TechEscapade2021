@@ -92,9 +92,9 @@ function Box({flag}) {
 	  }
 	  
 	  const hint_tab=()=>{
-		  if(lfl_count!==0){
-		TweenMax.to('.tooltip',1,{y:-10,opacity:0,display:'none'});
-		  TweenMax.to('.hint_section',1,{y:10,opacity:1,display:'flex',delay:1});		
+		  if(lfl_count>0){
+		TweenMax.to('.tooltip',0.5,{y:-10,opacity:0,display:'none'});
+		  TweenMax.to('.hint_section',0.5,{y:10,opacity:1,display:'flex',delay:0.5});		
 		  
 		  }
 		  else{
@@ -104,10 +104,16 @@ function Box({flag}) {
 	  const show_hint=()=>{
 		window.open("https://www.google.com");  
 		setFlag(lfl_count-1);
-		TweenMax.to('.tooltip',1,{y:10,opacity:1,display:'unset',delay:1});
-		  TweenMax.to('.hint_section',1,{y:-10,opacity:0,display:'none',});
+		TweenMax.to('.tooltip',0.5,{y:10,opacity:1,display:'unset',delay:0.5});
+		  TweenMax.to('.hint_section',0.5,{y:-10,opacity:0,display:'none',});
 	  } 
 	  let c=1;
+	  const scalelvl=()=>{
+		TweenMax.to('.card',0.5,{css:{transform:'scale(1.2)'},ease:Power3.easeOut});
+	}
+	const normallvl=()=>{
+		TweenMax.to('.card',0.5,{css:{transform:'scale(1)'},ease:Power3.easeOut});
+	}
 	return(
 		<>
 		<div className="container" >
@@ -157,7 +163,7 @@ function Box({flag}) {
 			
 					<h2>01</h2>
 					<p   className="typing" style={{opacity:0}}>{currentText}</p>
-					<img className="lvl" src={lvl} alt="lvl" style={{width:'100%',display:'none',opacity:0}}/>
+					<img className="lvl" src={lvl} alt="lvl" onMouseOver={scalelvl} onMouseOut={normallvl} style={{width:'100%',display:'none',opacity:0}}/>
 					<a href="#"	className="nxtbtn" onClick={next_page}>Next</a>
 					
 					

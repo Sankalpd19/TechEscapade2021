@@ -38,6 +38,7 @@
 	backdrop-filter:blur(30px);
 	transition: ease;
 }
+
 .bar{
     display: none;
     position: absolute;
@@ -171,3 +172,7 @@
   .tooltip:hover .tooltiptext {
 	visibility: visible;
   }  
+/* .lvl:hover 
+{
+	transform:scale(2);
+} */
