@@ -106,7 +106,8 @@ function Box({flag}) {
 		setFlag(lfl_count-1);
 		TweenMax.to('.tooltip',1,{y:10,opacity:1,display:'unset',delay:1});
 		  TweenMax.to('.hint_section',1,{y:-10,opacity:0,display:'none',});
-	  }
+	  } 
+	  let c=1;
 	return(
 		<>
 		<div className="container" >
@@ -119,34 +120,34 @@ function Box({flag}) {
 			
 			<div className="bar"></div>
 			<div className="hint_section">
-				<div className="hint_box">
+				<div className="hint_box">{c++}
 				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
 				</div>
-				<div className="hint_box">
+				<div className="hint_box">{c++}
 				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
 				</div>
-				<div className="hint_box">
+				<div className="hint_box">{c++}
 				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
 				</div>
-				<div className="hint_box">
+				<div className="hint_box">{c++}
 				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
 				</div>
-				<div className="hint_box">
+				<div className="hint_box">{c++}
 				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
 				</div>
-				<div className="hint_box">
+				<div className="hint_box">{c++}
 				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
 				</div>
-				<div className="hint_box">
+				<div className="hint_box">{c++}
 				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
 				</div>
-				<div className="hint_box">
+				<div className="hint_box">{c++}
 				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
 				</div>
-				<div className="hint_box">
+				<div className="hint_box">{c++}
 				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
 				</div>
-				<div className="hint_box">
+				<div className="hint_box">{c++}
 				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
 				</div>
 			</div>

@@ -6,7 +6,9 @@ function Card({setFlag}) {
 function box_open(){
 			console.log(setFlag);
 			let count=1;
-			setFlag(count);document.getElementById("yo1").style.display='none';
+			setFlag(count);
+			TweenMax.to('.main_container',{css:{background:"black"}});
+			document.getElementById("yo1").style.display='none';
 			document.getElementById("yo2").style.display='none';
 			document.getElementById("yo3").style.display='none';
 			document.getElementById("yo").style.display='flex';
@@ -21,9 +23,9 @@ function box_open(){
 			</div>
 			<div className="face face2">
 				<div className="content">
-					<p>this is so cool
+					{/* <p>this is so cool
 					wooahhh yeahhh
-					demnnnnnnnnnnnnnnnn</p>
+					demnnnnnnnnnnnnnnnn</p> */}
 						<a href="#" onClick={box_open}>START</a>
 				</div>	
 			</div>

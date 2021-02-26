@@ -2,14 +2,15 @@
 	position: relative;
 } .card1 .face{
 	backdrop-filter:blur(55px);
-	width: 95%;
-	height: 250px;
+	width: 100%;
+	/* height: 250px; */
 	transition: 0.4s;
 	/* box-shadow: 1px -3px 34px rgba(255,255,255,0.3) */
 } .card1 .face.face1{
 	position: relative;
 	background: rgb(14, 14, 15);
-	display: flex;
+	display: flex; 
+	padding: 28%;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
@@ -25,7 +26,7 @@
 	0 0 50px #fff,
 	-10px 0 80px #f0f,
 	10px 0 80px #0ff;
-	transform: translateX(0px);
+	/* transform: translateX(0px); */
 	
 } .card1 .face.face1 .content{
 	opacity: 1;
@@ -54,14 +55,14 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 20px;
+	padding: 6% 14%;
 	box-sizing: border-box;
 	box-shadow: 0 20px 50px rgba(0,0,0,0.8);
-	transform: translateY(-240px);
-
-} .card1:hover .face.face2{
-	transform: translateY(-118px);
-} .card1 .face.face2.content p,a{
+	transform: translateY(-87%);
+}
+.card1:hover .face.face2{
+	transform: translateY(-11%); }
+	 .card1 .face.face2.content p,a{
 	margin: 0;
 	padding: 0;
 	font-size: 14px;
@@ -70,7 +71,7 @@
 	text-decoration:none;
 	color: #fff;
 	box-sizing:border-box;
-	box-shadow: 3px 10px 10px rgba(0,0,0,0.5);
+	box-shadow: 3px 6px 6px rgba(0,0,0,0.5);
 	padding:10px 24px;
 	margin: 15px 0 0;
 	display: block;
@@ -80,9 +81,9 @@
 	color: #111;
 	transform:rotate(1deg);
 }
-.card1:hover .face.face2 .content a{
-	transform: translateY(30px);
-}
+/* .card1:hover .face.face2 .content a{ */
+	/* transform: translateY(30px); */
+/* } */
 .card1:hover .face.face2 .content p{
 	opacity: 0;
 	
