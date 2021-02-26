@@ -17,7 +17,7 @@ body{position: relative;
     margin: auto;padding: auto;
 }
 .main_container{
-    background-image: url(./assests/abstract-science-fiction-futuristic-background-with-red-blue-neon-lights\ \(4\).jpg);
+    background-image: url(./assests/abstract-science-fiction-futuristic-background-with-red-blue-neon-lights\ \(4\)\ \(1\).webp);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -204,7 +204,7 @@ body{position: relative;
         align-items: center;
 }
 .content1{
-    background-image: url(./assests/4238568.jpg);
+    background-image: url(./assests/4238568.webp);
     background-position: center;
     background-size: cover;
    width: 100%;
