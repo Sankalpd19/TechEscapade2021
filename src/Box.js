@@ -3,7 +3,7 @@ import './Box.css';
 import './Card';
 import bulb from './assests/bulb.png';
 import hint from './assests/hint.svg';
-import lvl from './assests/lvl.svg';
+import lvl from './assests/lvl.png';
 import {TweenMax,Power3} from 'gsap';
 import {TimelineLite} from 'gsap/gsap-core';
 
