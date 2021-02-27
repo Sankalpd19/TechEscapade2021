@@ -138,6 +138,7 @@ body{position: relative;
 }
 .main_container .main_box{
     flex: 4;
+    overflow: auto;
     display: flex;
     flex-direction: column;
 }
@@ -242,3 +243,4 @@ body{position: relative;
     background:#242424e3;
 }
 }
+

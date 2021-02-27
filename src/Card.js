@@ -18,7 +18,18 @@ function box_open(){
 		<div className="card1">
 			<div className="face face1">
 			<div className="content">
-					<h3>BE<span>G</span>IN</h3>
+					{/* <h3>BE<span>G</span>IN</h3> */}
+					<h1 id="litheader">BE<span>G</span>IN</h1>
+					<div className="glare"></div>
+					<div class="inset">
+               			 <p>
+                   			<input type="text" name="username" id="email" placeholder="Email address"></input>
+                		</p>
+                		<p>
+                   			<input type="password" name="password" id="password" placeholder="Access code"></input>
+                		</p>
+
+				</div>
 				</div>	
 			</div>
 			<div className="face face2">
