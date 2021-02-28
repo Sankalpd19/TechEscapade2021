@@ -4,6 +4,7 @@ import './Card';
 import bulb from './assests/bulb.png';
 import hint from './assests/hint.svg';
 import lvl from './assests/lvl.svg';
+import chat from './assests/chat.svg';
 import {TweenMax,Power3} from 'gsap';
 import {TimelineLite} from 'gsap/gsap-core';
 
@@ -86,7 +87,7 @@ function Box({flag}) {
 		bartl.to('.bar',{left:'84%',duration:2,ease:Power3.easeOut});
 		bartl.to('.bar',{height:0,display:'none',duration:1,onComplete:function(){
 			TweenMax.to('.bulb',1,{y:10,opacity:1,display:'unset'});
-			
+			TweenMax.to('.chatbtn',{display:'unset'});
 		}});
 		TweenMax.to('.proceed',1,{opacity:0,display:'none'});
 	  }
@@ -170,7 +171,14 @@ function Box({flag}) {
 				</div>
 			</div>	
 			<p className="proceed" onClick={level1}> Click here to proceed to first level</p>
-			
+			<a className="chatbtn" href="https://form.typeform.com/to/dp7IZ5bO?typeform-medium=embed-snippet" data-mode="popup"  target="_blank" style={{display:'none'}}>
+				<img className="chaticon" src={chat} alt={chat}></img>
+			 </a>
+			  <script> {function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement,
+			   gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/";
+			    if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; 
+				q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } }}() </script> 
+
 		</div>
 		</>
 		
