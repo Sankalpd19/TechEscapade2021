@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/TechEscapade2021/static/css/main.ac990fc1.chunk.css",
-    "main.js": "/TechEscapade2021/static/js/main.cab07faa.chunk.js",
-    "main.js.map": "/TechEscapade2021/static/js/main.cab07faa.chunk.js.map",
+    "main.css": "/TechEscapade2021/static/css/main.cdc0ffd0.chunk.css",
+    "main.js": "/TechEscapade2021/static/js/main.08dbf1f5.chunk.js",
+    "main.js.map": "/TechEscapade2021/static/js/main.08dbf1f5.chunk.js.map",
     "runtime-main.js": "/TechEscapade2021/static/js/runtime-main.c148663d.js",
     "runtime-main.js.map": "/TechEscapade2021/static/js/runtime-main.c148663d.js.map",
-    "static/js/2.7ff0ebf1.chunk.js": "/TechEscapade2021/static/js/2.7ff0ebf1.chunk.js",
-    "static/js/2.7ff0ebf1.chunk.js.map": "/TechEscapade2021/static/js/2.7ff0ebf1.chunk.js.map",
+    "static/js/2.d1c82094.chunk.js": "/TechEscapade2021/static/js/2.d1c82094.chunk.js",
+    "static/js/2.d1c82094.chunk.js.map": "/TechEscapade2021/static/js/2.d1c82094.chunk.js.map",
     "static/js/3.24d3640c.chunk.js": "/TechEscapade2021/static/js/3.24d3640c.chunk.js",
     "static/js/3.24d3640c.chunk.js.map": "/TechEscapade2021/static/js/3.24d3640c.chunk.js.map",
     "index.html": "/TechEscapade2021/index.html",
-    "static/css/main.ac990fc1.chunk.css.map": "/TechEscapade2021/static/css/main.ac990fc1.chunk.css.map",
-    "static/js/2.7ff0ebf1.chunk.js.LICENSE.txt": "/TechEscapade2021/static/js/2.7ff0ebf1.chunk.js.LICENSE.txt",
+    "static/css/main.cdc0ffd0.chunk.css.map": "/TechEscapade2021/static/css/main.cdc0ffd0.chunk.css.map",
+    "static/js/2.d1c82094.chunk.js.LICENSE.txt": "/TechEscapade2021/static/js/2.d1c82094.chunk.js.LICENSE.txt",
     "static/media/Box.css": "/TechEscapade2021/static/media/3163 (2).500d4fbc.webp",
     "static/media/App.css": "/TechEscapade2021/static/media/abstract-science-fiction-futuristic-background-with-red-blue-neon-lights (4) (1).3fc1d534.webp",
+    "static/media/chat.a78bb4e6.svg": "/TechEscapade2021/static/media/chat.a78bb4e6.svg",
     "static/media/cu.4b8cc2ff.svg": "/TechEscapade2021/static/media/cu.4b8cc2ff.svg",
     "static/media/grid-small1.ee8979bd.svg": "/TechEscapade2021/static/media/grid-small1.ee8979bd.svg",
     "static/media/hint.52de6f57.svg": "/TechEscapade2021/static/media/hint.52de6f57.svg",
@@ -24,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c148663d.js",
-    "static/js/2.7ff0ebf1.chunk.js",
-    "static/css/main.ac990fc1.chunk.css",
-    "static/js/main.cab07faa.chunk.js"
+    "static/js/2.d1c82094.chunk.js",
+    "static/css/main.cdc0ffd0.chunk.css",
+    "static/js/main.08dbf1f5.chunk.js"
   ]
 }
