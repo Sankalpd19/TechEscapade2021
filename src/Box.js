@@ -124,7 +124,6 @@ function Box({flag}) {
 			  Lifelines (available:-{lfl_count})
 		  </span>
 		</div>
-			
 			<div className="bar"></div>
 			<div className="hint_section">
 				<div className="hint_box">{c++}
@@ -171,13 +170,6 @@ function Box({flag}) {
 				</div>
 			</div>	
 			<p className="proceed" onClick={level1}> Click here to proceed to first level</p>
-			<a className="chatbtn" href="https://form.typeform.com/to/dp7IZ5bO?typeform-medium=embed-snippet" data-mode="popup"  target="_blank" style={{display:'none'}}>
-				<img className="chaticon" src={chat} alt={chat}></img>
-			 </a>
-			  <script> {function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement,
-			   gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/";
-			    if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; 
-				q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } }}() </script> 
 
 		</div>
 		</>
