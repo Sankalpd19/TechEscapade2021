@@ -30,6 +30,9 @@ function Box({flag}) {
 			count=-1;
 			
 		}
+		if(count===-1){
+			document.querySelector('.nxtbtn').innerHTML="NEXT";
+		}
 		count++;
 		currentText=texts[count];
 		if(count===1){
@@ -41,6 +44,7 @@ function Box({flag}) {
 		if(count===texts.length-1){
 			alert("Message recieved from Bit Lee:- If you get this message,it means you're in real danger..But don't worry I'll help you at every step!! Do remember to stay attentive,everything's a clue!");
 		TweenMax.to('.proceed',2,{visibility:'unset',display:'unset',opacity:1,ease:Power3.easeOut,delay:1});
+		document.querySelector('.nxtbtn').innerHTML="RESTART STORY";
 		}	
 		
 
@@ -103,7 +107,61 @@ function Box({flag}) {
 		  }
 	  }
 	  const show_hint=()=>{
-		window.open("https://www.google.com");  
+		alert("14 numbers in the white blocks when placed as specified will give a 7 letter word. Binary of numbers is either 3 or 4 bits but binary of every letter is 8. Group the binaries of two adjacent numbers to get the binary of each letter");
+		setFlag(lfl_count-1);
+		TweenMax.to('.tooltip',0.5,{y:10,opacity:1,display:'unset',delay:0.5});
+		  TweenMax.to('.hint_section',0.5,{y:-10,opacity:0,display:'none',});
+	  } 
+	  const show_hint1=()=>{
+		alert("Up , down , left ,right ... look closer with your eyes wide open");
+		setFlag(lfl_count-1);
+		TweenMax.to('.tooltip',0.5,{y:10,opacity:1,display:'unset',delay:0.5});
+		  TweenMax.to('.hint_section',0.5,{y:-10,opacity:0,display:'none',});
+	  } 
+	  const show_hint2=()=>{
+		alert("Google Baba knows everything");
+		setFlag(lfl_count-1);
+		TweenMax.to('.tooltip',0.5,{y:10,opacity:1,display:'unset',delay:0.5});
+		  TweenMax.to('.hint_section',0.5,{y:-10,opacity:0,display:'none',});
+	  } 
+	  const show_hint3=()=>{
+		alert("(1) don't leave any spot , for some places might change your cursor and point in the correct direction (2) Nothing what it seems to be , it is what it hides ");
+		setFlag(lfl_count-1);
+		TweenMax.to('.tooltip',0.5,{y:10,opacity:1,display:'unset',delay:0.5});
+		  TweenMax.to('.hint_section',0.5,{y:-10,opacity:0,display:'none',});
+	  } 
+	  const show_hint4=()=>{
+		alert("the famous person in the picture used an encryption method which was named after him")
+		setFlag(lfl_count-1);
+		TweenMax.to('.tooltip',0.5,{y:10,opacity:1,display:'unset',delay:0.5});
+		  TweenMax.to('.hint_section',0.5,{y:-10,opacity:0,display:'none',});
+	  } 
+	  const show_hint5=()=>{
+		alert("master mind will take you ahead Output of the code is the key to unlock your zip");
+		setFlag(lfl_count-1);
+		TweenMax.to('.tooltip',0.5,{y:10,opacity:1,display:'unset',delay:0.5});
+		  TweenMax.to('.hint_section',0.5,{y:-10,opacity:0,display:'none',});
+	  } 
+	  const show_hint6=()=>{
+		alert(" this time it's the 12 magical phrases that can be converted in a single private cryptographic string. This string is the key to the next task");
+		setFlag(lfl_count-1);
+		TweenMax.to('.tooltip',0.5,{y:10,opacity:1,display:'unset',delay:0.5});
+		  TweenMax.to('.hint_section',0.5,{y:-10,opacity:0,display:'none',});
+	  } 
+	  const show_hint7=()=>{
+		alert("the one who outshines are always remembered");
+		setFlag(lfl_count-1);
+		TweenMax.to('.tooltip',0.5,{y:10,opacity:1,display:'unset',delay:0.5});
+		  TweenMax.to('.hint_section',0.5,{y:-10,opacity:0,display:'none',});
+	  } 
+	  const show_hint8=()=>{
+		alert("fetch order and compile them all and grab a key to untangle it all.");
+		setFlag(lfl_count-1);
+		TweenMax.to('.tooltip',0.5,{y:10,opacity:1,display:'unset',delay:0.5});
+		  TweenMax.to('.hint_section',0.5,{y:-10,opacity:0,display:'none',});
+	  } 
+	  const show_hint9=()=>{
+		alert("description of Google form will contain a hint that all the keywords from previous level is the passcode to the zip");
 		setFlag(lfl_count-1);
 		TweenMax.to('.tooltip',0.5,{y:10,opacity:1,display:'unset',delay:0.5});
 		  TweenMax.to('.hint_section',0.5,{y:-10,opacity:0,display:'none',});
@@ -130,31 +188,31 @@ function Box({flag}) {
 				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
 				</div>
 				<div className="hint_box">{c++}
-				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
+				<img className="hint-img" onClick={show_hint1} src={hint} alt="hint"/>
 				</div>
 				<div className="hint_box">{c++}
-				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
+				<img className="hint-img" onClick={show_hint2} src={hint} alt="hint"/>
 				</div>
 				<div className="hint_box">{c++}
-				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
+				<img className="hint-img" onClick={show_hint3} src={hint} alt="hint"/>
 				</div>
 				<div className="hint_box">{c++}
-				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
+				<img className="hint-img" onClick={show_hint4} src={hint} alt="hint"/>
 				</div>
 				<div className="hint_box">{c++}
-				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
+				<img className="hint-img" onClick={show_hint5} src={hint} alt="hint"/>
 				</div>
 				<div className="hint_box">{c++}
-				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
+				<img className="hint-img" onClick={show_hint6} src={hint} alt="hint"/>
 				</div>
 				<div className="hint_box">{c++}
-				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
+				<img className="hint-img" onClick={show_hint7} src={hint} alt="hint"/>
 				</div>
 				<div className="hint_box">{c++}
-				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
+				<img className="hint-img" onClick={show_hint8} src={hint} alt="hint"/>
 				</div>
 				<div className="hint_box">{c++}
-				<img className="hint-img" onClick={show_hint} src={hint} alt="hint"/>
+				<img className="hint-img" onClick={show_hint9} src={hint} alt="hint"/>
 				</div>
 			</div>
 			<div className="card">
