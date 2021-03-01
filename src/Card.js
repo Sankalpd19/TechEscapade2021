@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import './Card.css';
 import {TweenMax,Power3} from 'gsap';
 function Card({setFlag}) {  
-	// const [count, setCount] = useState(0);
+	const [input, setinput] = useState();
 function box_open(){
 			console.log(setFlag);
 			let count=1;
@@ -23,7 +23,7 @@ function box_open(){
 					<div className="glare"></div>
 					<div class="inset">
                			 <p>
-                   			<input type="text" name="username" id="email" placeholder="Email address"></input>
+                   			<input type="text" name="username" id="email" placeholder="Email address" value={input} onInput={e=>setinput(e.target.value)}></input>
                 		</p>
                 		<p>
                    			<input type="password" name="password" id="password" placeholder="Access code"></input>
