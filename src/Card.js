@@ -23,7 +23,7 @@ function box_open(){
 					<div className="glare"></div>
 					<div class="inset">
                			 <p>
-                   			<input type="text" name="username" id="email" placeholder="Email address" value={input} onInput={e=>setinput(e.target.value)}></input>
+                   			<input type="text" name="username" id="email" placeholder="Email addres" value={input} onInput={e=>setinput(e.target.value)}></input>
                 		</p>
                 		<p>
                    			<input type="password" name="password" id="password" placeholder="Access code"></input>
