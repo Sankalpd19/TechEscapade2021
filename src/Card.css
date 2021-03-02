@@ -144,3 +144,135 @@
   .card1:hover .glare{
 	  opacity:1;
   }
+  .poweron {
+	color: #000000;
+	transition: all 0.5s;
+	animation: flicker 1.5s ease-in-out 1 alternate;
+  }
+  @keyframes neon {
+	from {
+	  text-shadow: 
+	  0 0 2.5px #fff,
+	  0 0 5px #fff,
+	  0 0 7.5px #fff,
+	  0 0 10px #00d9ff,
+	  0 0 17.5px #00d9ff,
+	  0 0 20px #00d9ff,
+	  0 0 25px #00d9ff,
+	  0 0 37.5px #00d9ff;
+	}
+  
+	to {
+		text-shadow: 
+		0 0 3px #fff,
+		0 0 7px  #fff,
+		0 0 13px  #fff,
+		0 0 17px  #00d9ff,
+		0 0 33px  #00d9ff,
+		0 0 38px  #00d9ff,
+		0 0 48px #00d9ff,
+		0 0 63px #00d9ff;
+	  }
+  }
+  
+  @keyframes flicker {
+	0% {
+	  text-shadow: 
+	  0 0 2.5px #fff,
+	  0 0 5px #fff,
+	  0 0 7.5px #fff,
+	  0 0 10px #00d9ff,
+	  0 0 17.5px #00d9ff,
+	  0 0 20px #00d9ff,
+	  0 0 25px #00d9ff,
+	  0 0 37.5px #00d9ff;
+	}
+  
+	2% {
+	  text-shadow: none;
+	}
+  
+	8% {
+	  text-shadow: 
+	  0 0 2.5px #fff,
+	  0 0 5px #fff,
+	  0 0 7.5px #fff,
+	  0 0 10px #00d9ff,
+	  0 0 17.5px #00d9ff,
+	  0 0 20px #00d9ff,
+	  0 0 25px #00d9ff,
+	  0 0 37.5px #00d9ff;
+	}
+  
+	10% {
+	  text-shadow: none;
+	}
+  
+	20% {
+	  text-shadow: 
+	  0 0 2.5px #fff,
+	  0 0 5px #fff,
+	  0 0 7.5px #fff,
+	  0 0 10px #00d9ff,
+	  0 0 17.5px #00d9ff,
+	  0 0 20px #00d9ff,
+	  0 0 25px #00d9ff,
+	  0 0 37.5px #00d9ff;
+	}
+  
+	22% {
+	  text-shadow: none;
+	}
+  
+	24% {
+	  text-shadow: 
+	  0 0 2.5px #fff,
+	  0 0 5px #fff,
+	  0 0 7.5px #fff,
+	  0 0 10px #00d9ff,
+	  0 0 17.5px #00d9ff,
+	  0 0 20px #00d9ff,
+	  0 0 25px #00d9ff,
+	  0 0 37.5px #00d9ff;
+	}
+  
+	28% {
+	  text-shadow: none;
+	}
+  
+	32% {
+	  text-shadow: 
+	  0 0 2.5px #fff,
+	  0 0 5px #fff,
+	  0 0 7.5px #fff,
+	  0 0 10px #00d9ff,
+	  0 0 17.5px #00d9ff,
+	  0 0 20px #00d9ff,
+	  0 0 25px #00d9ff,
+	  0 0 37.5px #00d9ff;
+	}
+  
+	34% {
+	  text-shadow: none;
+	}
+  
+	36% {
+	  text-shadow: none;
+	}
+  
+	42% {
+	  text-shadow: none;
+	}
+  
+	100% {
+	  text-shadow: 
+	  0 0 2.5px #fff,
+	  0 0 5px #fff,
+	  0 0 7.5px #fff,
+	  0 0 10px #00d9ff,
+	  0 0 17.5px #00d9ff,
+	  0 0 20px #00d9ff,
+	  0 0 25px #00d9ff,
+	  0 0 37.5px #00d9ff;
+	}
+  }  

@@ -39,6 +39,7 @@ function App() {
   //const [disp,newdisp]=useState(yo);
   return (
     <div className="main_container" >
+    
     {/* LEFT SIDE BAR */}
       <section className="leftbar" id="yo1" style={{display:yo}}>
           <div className="logo">

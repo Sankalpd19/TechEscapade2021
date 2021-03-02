@@ -1,4 +1,4 @@
-import React,{useState,useRef,useEffect} from 'react';
+import React,{useState} from 'react';
 import './Box.css';
 import './Card';
 import bulb from './assests/bulb.png';
@@ -10,10 +10,9 @@ import {TimelineLite} from 'gsap/gsap-core';
 
 function Box({flag}) {
 	const [lfl_count,setFlag]=useState(4);
-	let x=localStorage.getItem('lfl_used');if(x=='null'){x=0}
+	let x=localStorage.getItem('lfl_used');if(x==='null'){x=0}
 	localStorage.setItem('lfl_used',x);
-	let y=localStorage.getItem('hintused');
-	localStorage.setItem('hintused',y);
+	
 	var Story_text="Year 2050, SearchBook is emerging as one of the largest multinational technical company of the current decade, The main hype is around its on-device optimizations that are leading to next level personalized experiences without the expense of user data.But there lies a dark foundation for this success. SearchBook, with the help of a group of excellent developers, has invented ways to bypass security measures put in place by operating systems and is able to collect user data freely without the end user ever knowing about it. They've been lying to the world all along!	The evil SearchBook has also found effective ways to subdue the resistance from coders and developers who discovered the dark secrets of the evil corporation. Instead of discrediting them, SearchBook kidnaps them to certain disbanded facilities and puts them into medically induced hypnosis, controlling their actions to no end, for their benefit, This is how they developed their technologies in the first place.In such a facility far away from the city, a coder named 'Byte Chan' is able to resist and fight back this hypnosis because of his strong sense of justice and righteousness.You are Byte Chan. To get out of the facility you will need to unlock every door, You are able to contact your close friend Bit Lee who will help you in finding the clues to pick the keys. If you make it out alive with all the keys, the world will know the ugly truth about SearchBook!! The future of this world lies in your hands now. Save the world Coder!!!";  
 	const texts=Story_text.split(".");
 	let count=0;
@@ -102,9 +101,6 @@ function Box({flag}) {
 	  }
 	  
 	  const hint_tab=()=>{
-		localStorage.setItem('hintused',true);
-		let hint_used=localStorage.getItem('hintused');
-
 		  if(x<4&&lfl_count>0){
 		TweenMax.to('.tooltip',0.5,{y:-10,opacity:0,display:'none'});
 		  TweenMax.to('.hint_section',0.5,{y:10,opacity:1,display:'flex',delay:0.5});		
