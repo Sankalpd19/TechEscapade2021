@@ -9,9 +9,7 @@ function Card({ setFlag }) {
 	const [access, setAccess] = useState();	
 	const [login,setLogin]=useState(false);
 	function box_open() {	
-	
 		authorisation();
-
 	}
 	
 	function authorisation(){

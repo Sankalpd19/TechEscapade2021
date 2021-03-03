@@ -76,7 +76,7 @@ function Box({flag}) {
 			return;
 		}
 	}
-	let timer=setInterval(onTick,18);
+	let timer=setInterval(onTick,16);
 	const complete=()=>{
 		clearInterval(timer);
 		timer=null;
@@ -112,7 +112,7 @@ function Box({flag}) {
 	  }
 	  const show_hint=()=>{
 		  
-		alert("14 numbers in the white blocks when placed as specified will give a 7 letter word. Binary of numbers is either 3 or 4 bits but binary of every letter is 8. Group the binaries of two adjacent numbers to get the binary of each letter");
+		alert("14 numbers in the white blocks when placed as specified will give a 7 letter word.");
 		setFlag(lfl_count-1);
 		localStorage.setItem('lfl_used',++x);
 		
@@ -121,7 +121,7 @@ function Box({flag}) {
 		  TweenMax.to('.hint_section',0.5,{y:-10,opacity:0,display:'none',});
 	  } 
 	  const show_hint1=()=>{
-		alert("Up , down , left ,right ... look closer with your eyes wide open");
+		alert("A close inspection may reveal something and take you a step further..");
 		setFlag(lfl_count-1);
 		localStorage.setItem('lfl_used',++x);
 		TweenMax.to('.tooltip',0.5,{y:10,opacity:1,display:'unset',delay:0.5});
@@ -135,21 +135,21 @@ function Box({flag}) {
 		  TweenMax.to('.hint_section',0.5,{y:-10,opacity:0,display:'none',});
 	  } 
 	  const show_hint3=()=>{
-		alert("(1) don't leave any spot , for some places might change your cursor and point in the correct direction (2) Nothing what it seems to be , it is what it hides ");
+		alert("Don't leave any spot.....just closely inspect every note and rhyme and you will get your way out	TIP : Nothing is what it seems to be , it is what it hides...");
 		setFlag(lfl_count-1);
 		localStorage.setItem('lfl_used',++x);
 		TweenMax.to('.tooltip',0.5,{y:10,opacity:1,display:'unset',delay:0.5});
 		  TweenMax.to('.hint_section',0.5,{y:-10,opacity:0,display:'none',});
 	  } 
 	  const show_hint4=()=>{
-		alert("the famous person in the picture used an encryption method which was named after him")
+		alert("Isn't he a well known personality??")
 		setFlag(lfl_count-1);
 		localStorage.setItem('lfl_used',++x);
 		TweenMax.to('.tooltip',0.5,{y:10,opacity:1,display:'unset',delay:0.5});
 		  TweenMax.to('.hint_section',0.5,{y:-10,opacity:0,display:'none',});
 	  } 
 	  const show_hint5=()=>{
-		alert("master mind will take you ahead Output of the code is the key to unlock your zip");
+		alert("Antagonist will take you ahead Output of the code is the key to unlock your zip");
 		setFlag(lfl_count-1);
 		localStorage.setItem('lfl_used',++x);
 		TweenMax.to('.tooltip',0.5,{y:10,opacity:1,display:'unset',delay:0.5});
@@ -170,14 +170,14 @@ function Box({flag}) {
 		  TweenMax.to('.hint_section',0.5,{y:-10,opacity:0,display:'none',});
 	  } 
 	  const show_hint8=()=>{
-		alert("fetch order and compile them all and grab a key to untangle it all.");
+		alert("fetch order and compile them all and grab a key to untangle it all.Look for words in Escapade");
 		setFlag(lfl_count-1);
 		localStorage.setItem('lfl_used',++x);
 		TweenMax.to('.tooltip',0.5,{y:10,opacity:1,display:'unset',delay:0.5});
 		  TweenMax.to('.hint_section',0.5,{y:-10,opacity:0,display:'none',});
 	  } 
 	  const show_hint9=()=>{
-		alert("description of Google form will contain a hint that all the keywords from previous level is the passcode to the zip");
+		alert("");
 		setFlag(lfl_count-1);
 		localStorage.setItem('lfl_used',++x);
 		TweenMax.to('.tooltip',0.5,{y:10,opacity:1,display:'unset',delay:0.5});
