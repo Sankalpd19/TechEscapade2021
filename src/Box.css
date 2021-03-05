@@ -144,12 +144,13 @@
 .tooltip {
 	position: relative;
 	display: flex;
+	z-index: 8;
 	border-bottom: 1px dotted black;
   }
   .tooltip .tooltiptext {
 	visibility: hidden;
 	width: 120px;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.8);
 	color: #fff;
 	text-align: center;
 	border-radius: 6px;

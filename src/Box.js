@@ -9,7 +9,7 @@ import {TweenMax,Power3} from 'gsap';
 import {TimelineLite} from 'gsap/gsap-core';
 
 function Box({flag}) {
-	const [lfl_count,setFlag]=useState(4);
+	const [lfl_count,setFlag]=useState(5);
 	let x=localStorage.getItem('lfl_used');if(x==='null'){x=0}
 	localStorage.setItem('lfl_used',x);
 	
@@ -101,13 +101,14 @@ function Box({flag}) {
 	  }
 	  
 	  const hint_tab=()=>{
-		  if(x<4&&lfl_count>0){
+		  if(x<5&&lfl_count>0){
 		TweenMax.to('.tooltip',0.5,{y:-10,opacity:0,display:'none'});
 		  TweenMax.to('.hint_section',0.5,{y:10,opacity:1,display:'flex',delay:0.5});		
 		  
 		  }
 		  else{
-			document.querySelector('.tooltiptext').textContent="Lifelines Exhausted"; 
+			document.querySelector('.tooltiptext').textContent="Lifelines Exhausted!!"; 
+			alert("You have 2 extra lifelines which can be accessed via telegram bot!!");
 		  }
 	  }
 	  const show_hint=()=>{
